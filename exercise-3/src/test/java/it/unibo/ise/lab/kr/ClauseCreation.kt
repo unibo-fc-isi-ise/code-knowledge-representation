@@ -68,7 +68,7 @@ class ClauseCreation {
         """.trimIndent()
 
         val theory: Theory = Theory.of(
-            Scope.empty { factOf(structOf("concat", emptyList, varOf("L"), varOf("L"))) },
+            Scope.empty { factOf(structOf("concat", emptyLogicList, varOf("L"), varOf("L"))) },
             Scope.empty {
                 ruleOf(
                     structOf("concat", consOf(varOf("X"), varOf("Xs")), varOf("Ys"), consOf(varOf("X"), varOf("Zs"))),
